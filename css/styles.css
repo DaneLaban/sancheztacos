@@ -1,3 +1,56 @@
 body {
-  background-color: red;
+  /* background-color: rgb(248, 248, 248); */
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/*----- TOP HEADER PICTURE -----*/
+#header-menu {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.header-picture img {
+  height: 200px;
+}
+
+/*----- TOP SECTION -----*/
+#top-images {
+  padding: 0 50px;
+  display: flex;
+}
+
+.picnic {
+  width: 100%;
+  height: 50em;
+}
+
+.italian,
+.pose {
+  width: 100%;
+  height: 100%;
+}
+
+.backyard {
+  width: 100%;
+  height: 25em;
+}
+
+.column1 {
+  width: 50%;
+}
+
+.column2 {
+  width: 25%;
+  height: 31.5%;
+}
+
+.column3 {
+  position: relative;
+  width: 50%;
+  left: 50%;
+  bottom: 33.33%;
 }
