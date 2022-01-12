@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 /*----- TOP HEADER PICTURE -----*/
@@ -17,7 +17,7 @@ body {
   height: 200px;
 }
 
-/*----- TOP SECTION -----*/
+/*----- TOP IMAGES SECTION -----*/
 #top-images {
   padding: 0 50px;
   display: flex;
@@ -45,18 +45,57 @@ body {
 
 .column2 {
   width: 25%;
-  height: 31.5%;
+  height: 375px;
 }
 
 .column3 {
   position: relative;
   width: 50%;
   left: 50%;
-  bottom: 33.33%;
+  bottom: 50%;
+  margin-bottom: -400px;
+}
+
+.center-box {
+  background: rgba(53, 166, 151, 0.8);
+  padding: 100px 20px;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+.box-text {
+  color: white;
+  font-size: 40px;
+}
+
+.BtnWhite,
+a.BtnWhite {
+  color: #35a697;
+  background: #fff;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.BtnWhite:hover {
+  background-color: #35a697;
+  color: white;
+  border: #fff 1px solid;
+}
+
+/*----- CATERING SPECIALTY SECTION -----*/
+#catering-specialty {
+  padding: 0 50px;
 }
 
 .specialize {
-  position: relative;
-  text-align: center;
-  bottom: 300px;
+  text-align: left;
+  width: 50%;
 }
