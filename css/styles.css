@@ -17,51 +17,49 @@ body {
   height: 200px;
 }
 
-/*----- TOP IMAGES SECTION -----*/
-#top-images {
+/*----- TOP CONTAINER IMAGES SECTION -----*/
+.container-fluid {
   padding: 0 50px;
-  display: flex;
 }
 
-.picnic {
-  width: 100%;
-  height: 50em;
-}
+/* .top-image-left,
+.top-image-middle,
+.top-image-right,
+.top-image-below {
+} */
 
-.italian,
-.pose {
-  width: 100%;
-  height: 100%;
-}
-
-.backyard {
-  width: 100%;
-  height: 25em;
-}
-
-.column1 {
+#picnic-image {
+  float: left;
   width: 50%;
+  height: 700px;
 }
 
-.column2 {
+#pose-image {
+  float: left;
   width: 25%;
-  height: 375px;
+  height: 350px;
 }
 
-.column3 {
-  position: relative;
+#italian-image {
+  float: left;
+  width: 25%;
+  height: 350px;
+}
+
+#backyard-image {
+  float: left;
   width: 50%;
-  left: 50%;
-  bottom: 50%;
-  margin-bottom: -400px;
+  height: 350px;
 }
 
 .center-box {
   background: rgba(53, 166, 151, 0.8);
   padding: 100px 20px;
   text-align: center;
-  width: 400px;
-  margin: auto;
+  display: block;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .box-text {
@@ -80,7 +78,6 @@ a.BtnWhite {
   letter-spacing: 1px;
   font-size: 14px;
   line-height: 1;
-  display: inline-block;
   text-decoration: none;
 }
 
@@ -91,11 +88,3 @@ a.BtnWhite {
 }
 
 /*----- CATERING SPECIALTY SECTION -----*/
-#catering-specialty {
-  padding: 0 50px;
-}
-
-.specialize {
-  text-align: left;
-  width: 50%;
-}
