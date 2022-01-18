@@ -19,12 +19,30 @@ body {
   width: 200px;
 }
 
-/*----- TOP SECTION (PICTURE) -----*/
+/*----- TOP SECTION (PICTURE & TEXT) -----*/
 #top-picture img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
+  width: 100%;
+}
+
+.centered-text {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  color: #f3a161;
+  text-shadow: 2px 2px #254653;
+  -webkit-text-stroke: 1.5px #254653;
+  -webkit-font-smoothing: antialiased;
+}
+
+#top-picture h1 {
+  font-size: 12vh;
 }
 
 /*----- CATERING SPECIALTY SECTION -----*/
@@ -49,7 +67,20 @@ body {
   line-height: 27px;
 }
 
+/*------- MOBILE CSS ---------*/
+
 @media screen and (max-width: 600px) {
+  /*----- HEADER PICTURE -----*/
+  #header-menu {
+    padding: 0;
+  }
+
+  .header-picture img {
+    height: 75px;
+    width: 125px;
+  }
+
+  /*----- TOP PICTURE/TEXT SECTION -----*/
   #top-picture img {
     height: 400px;
     width: 100%;
@@ -57,5 +88,16 @@ body {
 
   #special-section {
     width: 100%;
+  }
+
+  .centered-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #top-picture h1 {
+    font-size: 8vh;
   }
 }
