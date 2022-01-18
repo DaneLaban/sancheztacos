@@ -7,6 +7,7 @@ body {
   padding: 0 25px;
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #254653;
+  background-color: #f3a0611c;
 }
 
 /*----- TOP HEADER PICTURE -----*/
@@ -47,7 +48,8 @@ body {
 
 /*----- CATERING SPECIALTY SECTION -----*/
 #special-section {
-  padding: 110px 0;
+  padding-top: 110px;
+  padding-bottom: 50px;
   width: 55%;
   margin: 0 auto;
   text-align: center;
@@ -65,6 +67,140 @@ body {
 #special-section p {
   font-size: 18px;
   line-height: 27px;
+}
+
+/*----- CATERING EVENTS && MENU BOX -----*/
+#cater-menu .column {
+  border-radius: 20px;
+  border: 7px solid #254653;
+  margin: 1% auto;
+  width: 30%;
+  min-height: 825px;
+  padding: 2rem;
+  justify-content: center;
+}
+
+#cater-menu .menu {
+  margin-right: 10px;
+}
+
+#cater-menu .event {
+  margin-left: 10px;
+}
+
+#cater-menu img {
+  border-radius: 50%;
+  border: 10px solid #f3a161;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#cater-menu h2 {
+  text-transform: uppercase;
+  font-size: 47px;
+  line-height: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#cater-menu h5 {
+  margin-top: 20px;
+}
+
+#cater-menu ul {
+  padding-left: 0;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: left;
+  width: 25.33%;
+}
+
+/*----- BOX BUTTONS -----*/
+.btn {
+  border-radius: 10px;
+  border: 3.5px solid #254653;
+  padding: 0.5rem 1.5rem 0.2rem 1.5rem;
+  background-color: #f3a161;
+  color: #254653;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #254653;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*----- CATERING EVENTS SECTION -----*/
+#catering-events {
+  margin-top: 40px;
+  background-color: #f0d876;
+  border-radius: 10px;
+  border: #254653 solid 7px;
+  background-size: 75%;
+  background-position: -100%;
+}
+
+#catering-events .col {
+  float: left;
+  padding: 0 15px 15px 15px;
+  margin-top: 40px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#catering-events .events {
+  width: 50%;
+}
+
+#catering-events .event-content {
+  width: 50%;
+  padding: 0 10%;
+}
+
+#catering-events ul {
+  padding: 0;
+  margin: 0;
+}
+
+#catering-events h1 {
+  text-align: center;
+  font-size: 54px;
+  margin-bottom: 2%;
+  font-family: "EB Garamond", serif;
+}
+
+#catering-events p {
+  font-size: 20px;
+}
+
+#catering-events li {
+  padding: 8px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background-color: #254653;
+  color: white;
+  width: 50%;
+}
+
+#catering-events li:hover {
+  background-color: white;
+  color: #254653;
 }
 
 /*------- MOBILE CSS ---------*/
@@ -99,5 +235,34 @@ body {
 
   #top-picture h1 {
     font-size: 8vh;
+  }
+
+  /*----- CATERING EVENTS/MENU BOX ------*/
+  #cater-menu .column {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /*----- PREMIERE CATERING -----*/
+  section#catering-events {
+    width: 100%;
+    margin: 0 auto;
+    background-size: 175%;
+  }
+
+  #catering-events .clearfix {
+    height: auto;
+    line-height: 1.4;
+    width: 100%;
+  }
+
+  #catering-events .event-content {
+    width: 100%;
+    padding: 5% 1%;
+    text-align: center;
+  }
+
+  #catering-events .column {
+    width: 100%;
   }
 }
