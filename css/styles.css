@@ -248,6 +248,8 @@ body {
     width: 100%;
     margin: 0 auto;
     background-size: 175%;
+    background-position-y: top;
+    background-position-x: 100%;
   }
 
   #catering-events .clearfix {
