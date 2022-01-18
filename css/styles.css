@@ -1,106 +1,61 @@
 body {
   letter-spacing: 1px;
-  background-color: rgb(24, 24, 24);
   width: 100%;
   height: 100%;
   margin: 0px;
-  padding: 0px;
   overflow-x: hidden;
+  padding: 0 25px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #254653;
 }
 
 /*----- TOP HEADER PICTURE -----*/
 #header-menu {
-  padding: 0 50px;
+  padding: 0 25px;
 }
 
 .header-picture img {
   height: 100px;
-  float: left;
+  width: 200px;
 }
 
-/*----- TOP SECTION (PICTURE/TEXT BOX) -----*/
-#backyard-image {
-  width: 100%;
-  height: 750px;
-}
-
-.center-box {
-  background: rgba(53, 166, 151, 0.8);
-  padding: 80px 20px;
-  text-align: center;
-  width: 25%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-text {
-  color: white;
-  font-size: 50px;
-  margin-bottom: 40px;
-}
-
-.BtnWhite,
-a.BtnWhite {
-  color: #35a697;
-  background: #fff;
-  border: 1px solid transparent;
-  padding: 15px 30px;
-  border-radius: 6px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 14px;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.BtnWhite:hover {
-  background-color: #35a697;
-  color: white;
-  border: #fff 1px solid;
-}
-
-/*----- THREE BOX SECTION -----*/
-
-#three-box img {
-  width: 559px;
-  height: 300px;
-}
-
-.column {
-  width: 33.33%;
-  background-color: #fff;
-}
-
-img.catering-pose,
-img.picnic,
-img.table {
-  opacity: 0.55;
-  margin-bottom: 0;
+/*----- TOP SECTION (PICTURE) -----*/
+#top-picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
 }
 
 /*----- CATERING SPECIALTY SECTION -----*/
 #special-section {
-  padding: 0 50px;
-  margin-top: 50px;
+  padding: 110px 0;
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.specialty-image {
-  width: 50%;
-  height: 400px;
+#special-section h1 {
+  margin-bottom: 27px;
+  font-family: "EB Garamond", serif;
+  color: #f3a161;
+  text-shadow: 2px 2px #254653;
+  -webkit-text-stroke: 1.5px #254653;
+  -webkit-font-smoothing: antialiased;
 }
 
-.specialize-header {
-  width: 50%;
+#special-section p {
+  font-size: 18px;
+  line-height: 27px;
 }
 
-.specialize-paragraph {
-  width: 40%;
-}
+@media screen and (max-width: 600px) {
+  #top-picture img {
+    height: 400px;
+    width: 100%;
+  }
 
-@media screen and (max-width: 500px) {
-  .column {
+  #special-section {
     width: 100%;
   }
 }
