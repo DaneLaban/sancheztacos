@@ -143,6 +143,7 @@ body {
 /*----- CATERING EVENTS SECTION -----*/
 #catering-events {
   margin-top: 40px;
+  padding: 1%;
   background-color: #f0d876;
   border-radius: 10px;
   border: #254653 solid 7px;
@@ -181,6 +182,10 @@ body {
   font-size: 54px;
   margin-bottom: 2%;
   font-family: "EB Garamond", serif;
+  color: #f3a161;
+  text-shadow: 3px 3px #254653;
+  -webkit-text-stroke: 1.5px #254653;
+  -webkit-font-smoothing: antialiased;
 }
 
 #catering-events p {
@@ -203,14 +208,52 @@ body {
   color: #254653;
 }
 
+/*----- CLIENTAL SECTION -----*/
+#cliental {
+  padding: 5% 0;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #f3a161;
+  border-radius: 10px;
+  border: #254653 solid 7px;
+}
+
+#cliental h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-family: "EB Garamond", serif;
+  color: #f0d876;
+  text-shadow: 3px 3px #254653;
+  -webkit-text-stroke: 1.5px #254653;
+  -webkit-font-smoothing: antialiased;
+}
+
+#cliental p {
+  width: 40%;
+  margin: 2% auto;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.client-image img {
+  width: 300px;
+  height: 100px;
+  margin: 2% auto;
+  text-align: center;
+}
+
 /*----- INSTAGRAM SECTION -----*/
 #instagram-section div.row {
   margin: 10px 0;
 }
 
 #instagram-section h1 {
-  margin-top: 50px;
+  margin-top: 100px;
   text-transform: uppercase;
+  font-family: "EB Garamond", serif;
 }
 
 #instagram-section a {
@@ -306,6 +349,9 @@ body {
 /*--------------------------- MOBILE CSS ---------------------------------*/
 
 @media screen and (max-width: 600px) {
+  body {
+    width: auto;
+  }
   /*----- HEADER PICTURE -----*/
   #header-menu {
     padding: 0;
@@ -387,6 +433,23 @@ body {
 
   #instagram-section h1 {
     width: 300px;
-    margin: auto;
+    margin: 5% auto;
+    margin-top: 100px;
+  }
+
+  #cliental p {
+    width: 100%;
+    padding: 5%;
+  }
+
+  #cliental img {
+    width: 120px;
+    height: 50px;
+    margin: 2%;
+  }
+
+  #cliental {
+    padding: 15% 0;
+    margin-top: 2%;
   }
 }
